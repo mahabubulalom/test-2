@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+    line-height: 0.8;
+}
+ul,li{
+    list-style-type: none;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+/* --------- nav bar part start heat-------------- */
+nav{
+    padding: 30px 0;
+    width: 100%;
+    position: absolute;
+}
+.nav_wrapper{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    
+}
+.logo img{
+    width: 141px;
+}
+.menu ul{
+    display: flex;
+    column-gap: 30px;
+}
+.menu ul li a{
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: capitalize;
+    position: relative;
+    transition: all linear 0.3s;
+}
+.menu ul li a:hover{
+    color: #d50a51;
+}
+.menu ul li a::after{
+    position: absolute;
+    content: url(../images/hover1.png);
+    left: 50%;
+    bottom: -50px;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: all linear 0.3s;
+}
+.menu ul li a:hover::after{
+    opacity: 1;
+    bottom: -30px;
+}
+.comon_batton a{
+    padding: 15px 27px;
+    border-radius: 20px;
+    border: 1px solid #d50a51;
+    color: #d50a51;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.comon_batton a svg{
+    color: #d50a51;
+    font-size: 16px;
+}
+/* --------- banner part start hear ---------- */
+#banner{
+    padding-top: 130px;
+    background-image: url(../images/banner-bg-image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner_content{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+.banner_image{
+    width: 570px;
+}
+.banner_description{
+    width: 570px;
+}
+.banner_description h2{
+    font-size: 61px;
+    font-weight: 600;
+    color: #8a5e3b;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+}
+.banner_description h1{
+    font-size: 84px;
+    font-weight: 400;
+    color: #d50a51;
+    font-family: 'Great Vibes', cursive;
+}
+.banner_description p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #444;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 30px;
+    line-height: 26px;
+}
+.banner_description a{
+    padding: 15px 20px;
+    border: 1px solid #d50a51;
+    border-radius: 25px;
+    display: inline-block;
+    color: #d50a51;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 65px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+/* --------- history part start hear ---------- */
+.history_wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    gap: 30px;
+}
+.history_image{
+    width: 570px;
+    margin-bottom: 90px;
+}
+.history_text{
+    width: 570px;
+}
+.comon_heading h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: #444;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 30px 0 0 55px;
+}
+.comon_heading h2{
+    font-size: 32px;
+    font-weight: 600;
+    color: #d50a51;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 5px 0 60px 55px;
+}
+.comon_paragrap p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #444;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 35px;
+    line-height: 26px;
+}
+/* --------- gift part start hear ---------- */
+#gift{
+    background-color: #fffae2;
+    padding: 88px 0 60px 0;
+}
+.gift_wrapper{
+    display: flex;
+    gap: 30;
+}
+.gift_history{
+    width: 570px;
+}
+.gift_image{
+    width: 570px;
+    position: relative;
+}
+.gift_image img{
+    left: 0;
+    bottom: -60px;
+    position: absolute;
+}
+.gift_batton{
+    display: flex;
+}
+.gift_batton .comon_batton a{
+    margin-right: 20px;
+}
+/* --------- couple_ticket start hear ---------- */
+#couple_ticket{
+    padding: 125px 0;
+}
+.couple_ticket_wrapper{
+    display: flex;
+    gap: 30px;
+}
+.ticket_batton{
+    
+}
+.couple_ticket_image{
+    width: 570px;
+    position: relative;
+}
+.couple_ticket_image img{
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+.couple_ticket_history{
+    width: 570px;
+    text-align: right;
+}
+.couple_ticket_history .comon_heading{
+    padding-right: 50px;
+}
+/* -- ---------- offer part start hear--------- -- */
+#service{
+    padding: 60px 0;
+    background-color: #fef5f9;
+}
+.service_items{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.service_mein{
+    width: 370px;
+}
+.service_mein_item{
+    gap: 30px;
+    width: 770px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.service_mein_item_right{
+    width: 370px;
+    padding: 30px;
+}
+.service_mein_item_right h4{
+    font-size: 20px;
+    font-weight: 600;
+    color: #d50a51;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.service_mein_item_right p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #444;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 20px;
+}
+/* -- ---------- shoots part start hear--------- -- */
+#shoots{
+    padding: 105px 0;
+}
+.shoots_wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.shoots_images{
+    width: 770px;
+    gap: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.shoots_image{
+    width: 370px;
+    height: 420px;
+    overflow: hidden;
+}
+.shoots_image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.shoots_description{
+    width: 370px;
+    text-align: right;
+}
+.shoots_description .comon_batton{
+    align-items: right;
+}
+.shoots_overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    opacity: 70%;
+}
